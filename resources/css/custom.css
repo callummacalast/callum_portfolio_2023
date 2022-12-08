@@ -1,9 +1,10 @@
-article > *:not(.entry-content),
-.entry-content > * {
+article>*:not(.entry-content),
+.entry-content>* {
     @apply mx-auto max-w-content;
 }
 
-.entry-content, .block-editor-block-list__layout {
+.entry-content,
+.block-editor-block-list__layout {
     h1 {
         @apply text-2xl;
     }
@@ -16,7 +17,9 @@ article > *:not(.entry-content),
         @apply text-lg;
     }
 
-    p, ul, ol {
+    p,
+    ul,
+    ol {
         a {
             @apply text-blue-500 underline;
 
@@ -39,4 +42,11 @@ article > *:not(.entry-content),
             @apply list-decimal list-inside;
         }
     }
+}
+
+
+
+.js-filter-item,
+.js-filter-project {
+    @apply rounded shadow;
 }

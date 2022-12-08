@@ -36,7 +36,7 @@ function filter_ajax()
             <div class="w-full md:w-1/2 lg:w-1/3 px-4  item-blog">
                 <div class="max-w-[370px] mx-auto mb-10">
                     <div class="rounded overflow-hidden mb-8">
-                        <img src="https://cdn.tailgrids.com/1.0/assets/images/blogs/blog-01/image-01.jpg" alt="image" class="w-full" />
+                        <img src="<?= get_the_post_thumbnail_url(); ?>" alt="image" class="w-full" />
                     </div>
                     <div>
                         <span class="
@@ -52,7 +52,7 @@ function filter_ajax()
                      text-white
                      mb-5
                      ">
-                            <?= the_date(); ?>
+                            <?= the_date() . ',' . the_time(); ?>
                         </span>
                         <h3>
                             <a href="<?= the_permalink(); ?>" class="
