@@ -14,7 +14,7 @@ $our_posts = new WP_Query($args);
 <!-- ====== Blog Section Start -->
 <section class="pt-20 lg:pt-[120px] pb-10 lg:pb-20">
 
-    <div class="grid grid-cols-5 categories gap-5 container mx-auto">
+    <div class="grid lg:grid-cols-8 md:grid-cols-4 grid-cols-2 categories gap-5 container mx-auto">
         <button class="js-filter-item p-3 bg-blue-300 hover:bg-blue-400 text-white">All</button>
         <?php
         $cat_args = array(
