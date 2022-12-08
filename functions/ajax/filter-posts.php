@@ -52,7 +52,7 @@ function filter_ajax()
                      text-white
                      mb-5
                      ">
-                            <?= the_date() . ',' . the_time(); ?>
+                            <?= get_the_date(); ?>
                         </span>
                         <h3>
                             <a href="<?= the_permalink(); ?>" class="

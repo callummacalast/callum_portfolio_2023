@@ -63,7 +63,7 @@ $our_posts = new WP_Query($args);
                      text-white
                      mb-5
                      ">
-                                    <?= the_date() . ',' . the_time(); ?>
+                                    <?= get_the_date(); ?>
                                 </span>
                                 <h3>
                                     <a href="javascript:void(0)" class="

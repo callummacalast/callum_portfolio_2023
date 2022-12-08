@@ -35,7 +35,7 @@ function filter_projects()
                 }
             </style>
             <article class="flex flex-col bg-gray-900 item-blog" style="margin: 0!important;">
-                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum" style="margin: 0;">
+                <a rel="noopener noreferrer" href="<?= get_the_permalink(); ?>" aria-label="Te nulla oportere reprimique his dolorum" style="margin: 0;">
                     <img alt="" class="object-cover w-full h-52 bg-gray-500" src="<?= get_the_post_thumbnail_url(); ?>">
                 </a>
                 <div class="flex flex-col flex-1 p-6">
