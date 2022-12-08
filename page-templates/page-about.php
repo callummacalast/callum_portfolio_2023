@@ -8,7 +8,7 @@ get_header();
         <div>
             <h2 class="text-3xl font-bold tracking-tight text-center sm:text-5xl ">About me<span class="text-blue-600">.</span></h2>
         </div>
-        <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center text-black mt-3">
+        <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center text-black" style="margin-top: 10px;">
             <div>
                 <h3 class="text-2xl font-bold tracking-tight sm:text-3xl ">Callum Macalast at a glance</h3>
                 <p class="mt-3 text-lg ">Website development has always been a passion of mine from, from a young age anything and everything tech got me thinking - <span class="italic"> 'How does that work?'</span>.</p>

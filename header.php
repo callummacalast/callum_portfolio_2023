@@ -25,7 +25,7 @@
 			<nav class="relative px-4 py-4 flex justify-between items-center bg-white <?php if (!is_front_page()) {
 																							echo 'shadow';
 																						}; ?>">
-				<a class="text-3xl font-extrabold leading-none" href="#">
+				<a class="text-3xl font-extrabold leading-none" href="<?= get_home_url(); ?>">
 					CM<span class="text-blue-600">.</span>
 				</a>
 				<div class="lg:hidden">
@@ -78,7 +78,7 @@
 				<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
 				<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
 					<div class="flex items-center mb-8">
-						<a class="mr-auto text-3xl font-bold leading-none" href="#">
+						<a class="mr-auto text-3xl font-bold leading-none" href="<?= get_home_url(); ?>">
 							CM<span class="text-blue-600">.</span>
 						</a>
 						<button class="navbar-close">
