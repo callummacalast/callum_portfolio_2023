@@ -17,7 +17,7 @@ get_header();
                 <span class="inline-block text-deep-purple-accent-400 text-3xl">Web Developer</span>
             </h2>
             <p class="pr-5 mb-5 text-base text-gray-700 md:text-lg">
-                I am a self taught web developer from rural pembrokeshire! I am very passionate about anything tech!
+                I am a self taught web developer from rural Pembrokeshire! I love anything tech, and surfing!
             </p>
             <div class="flex items-center">
                 <a href="<?= get_home_url(); ?>/projects" class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none">

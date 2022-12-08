@@ -22,7 +22,7 @@
 		<!-- component -->
 
 		<body class="bg-blue-500">
-			<nav class="relative px-4 py-4 flex justify-between items-center bg-white <?php if (!is_home()) {
+			<nav class="relative px-4 py-4 flex justify-between items-center bg-white <?php if (!is_front_page()) {
 																							echo 'shadow';
 																						}; ?>">
 				<a class="text-3xl font-extrabold leading-none" href="#">
