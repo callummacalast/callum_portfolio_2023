@@ -10,8 +10,11 @@ $our_posts = new WP_Query($args);
 <!-- component -->
 <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
 <!-- ====== Blog Section Start -->
-<section class="pt-20 lg:pt-[120px] pb-10 lg:pb-20">
+<section class="pt-10  pb-10 lg:pb-20">
     <div class="container">
+        <div class="heading my-5 text-center">
+            <h1 class="text-5xl font-bold">My Projects<span class="text-blue-600">.</span></h1>
+        </div>
 
         <div class="grid lg:grid-cols-8 md:grid-cols-4 grid-cols-2 categories gap-5 container mx-auto">
 
