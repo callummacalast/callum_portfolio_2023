@@ -22,7 +22,9 @@
 		<!-- component -->
 
 		<body class="bg-blue-500">
-			<nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+			<nav class="relative px-4 py-4 flex justify-between items-center bg-white <?php if (!is_home()) {
+																							echo 'shadow';
+																						}; ?>">
 				<a class="text-3xl font-extrabold leading-none" href="#">
 					CM<span class="text-blue-600">.</span>
 				</a>
@@ -34,9 +36,6 @@
 						</svg>
 					</button>
 				</div>
-				<?php
-				echo get_page_uri();
-				?>
 				<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6 navigation-menu">
 					<li><a class="text-sm text-gray-400 hover:text-blue-600" href="<?= get_home_url(); ?>">Home</a></li>
 					<li class="text-gray-300">
@@ -44,7 +43,7 @@
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 						</svg>
 					</li>
-					<li><a class="text-sm text-gray-400 hover:text-blue-600   <?php if (get_page_uri() == 'about-me') {
+					<li><a class="text-sm text-gray-400 hover:text-blue-600   <?php if (get_page_uri() == 'about') {
 																					echo 'active';
 																				}; ?>" href="<?= get_home_url(); ?>/about">About Me</a></li>
 					<li class="text-gray-300">

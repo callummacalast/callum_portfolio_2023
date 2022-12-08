@@ -12,9 +12,9 @@ get_header();
         <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
 
             <h2 class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                Everything you<br class="hidden md:block" />
-                can imagine
-                <span class="inline-block text-deep-purple-accent-400">is real</span>
+                Callum Macalast<span class="text-blue-600">.</span>
+                <br class="hidden md:block" />
+                <span class="inline-block text-deep-purple-accent-400 text-3xl">Web Developer</span>
             </h2>
             <p class="pr-5 mb-5 text-base text-gray-700 md:text-lg">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
@@ -23,7 +23,7 @@ get_header();
                 <a href="/" class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none">
                     My Work
                 </a>
-                <a href="/" aria-label="" class="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700">Learn more</a>
+                <a href="<?= get_home_url(); ?>/about" aria-label="" class="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-purple-700 border">About me</a>
             </div>
         </div>
     </div>
