@@ -112,6 +112,10 @@
   margin: 2rem
 }
 
+.m-2 {
+  margin: 0.5rem
+}
+
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem
@@ -241,6 +245,14 @@
 
 .mt-4 {
   margin-top: 1rem
+}
+
+.mt-20 {
+  margin-top: 5rem
+}
+
+.mb-20 {
+  margin-bottom: 5rem
 }
 
 .block {
@@ -387,6 +399,10 @@
   max-width: 782px
 }
 
+.max-w-screen-lg {
+  max-width: 960px
+}
+
 .flex-1 {
   flex: 1 1 0%
 }
@@ -485,6 +501,10 @@
   align-items: stretch
 }
 
+.justify-start {
+  justify-content: flex-start
+}
+
 .justify-center {
   justify-content: center
 }
@@ -563,6 +583,10 @@
   border-color: rgb(156 163 175 / var(--tw-divide-opacity))
 }
 
+.self-start {
+  align-self: flex-start
+}
+
 .self-center {
   align-self: center
 }
@@ -593,6 +617,10 @@
 
 .rounded-lg {
   border-radius: 0.5rem
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem
 }
 
 .border {
@@ -806,6 +834,11 @@
 .px-0 {
   padding-left: 0px;
   padding-right: 0px
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem
 }
 
 .pt-6 {
@@ -1282,6 +1315,11 @@ body {
     background-color: rgb(107 114 128 / var(--tw-bg-opacity))
   }
 
+  .dark\:bg-sky-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(56 189 248 / var(--tw-bg-opacity))
+  }
+
   .dark\:text-gray-100 {
     --tw-text-opacity: 1;
     color: rgb(243 244 246 / var(--tw-text-opacity))
@@ -1295,6 +1333,11 @@ body {
   .dark\:text-sky-400 {
     --tw-text-opacity: 1;
     color: rgb(56 189 248 / var(--tw-text-opacity))
+  }
+
+  .dark\:text-gray-900 {
+    --tw-text-opacity: 1;
+    color: rgb(17 24 39 / var(--tw-text-opacity))
   }
 }
 
@@ -1375,6 +1418,11 @@ body {
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem
   }
 
   .sm\:leading-none {
@@ -1477,6 +1525,10 @@ body {
     position: absolute
   }
 
+  .lg\:m-6 {
+    margin: 1.5rem
+  }
+
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto
@@ -1560,6 +1612,10 @@ body {
     width: 50%
   }
 
+  .lg\:w-2\/3 {
+    width: 66.666667%
+  }
+
   .lg\:max-w-7xl {
     max-width: 80rem
   }
@@ -1596,6 +1652,10 @@ body {
     grid-template-columns: repeat(4, minmax(0, 1fr))
   }
 
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+  }
+
   .lg\:flex-row {
     flex-direction: row
   }
@@ -1624,6 +1684,10 @@ body {
 
   .lg\:rounded-none {
     border-radius: 0px
+  }
+
+  .lg\:p-12 {
+    padding: 3rem
   }
 
   .lg\:px-8 {
@@ -1676,6 +1740,11 @@ body {
 
   .lg\:text-5xl {
     font-size: 3rem;
+    line-height: 1
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1
   }
 
