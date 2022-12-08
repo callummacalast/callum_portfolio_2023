@@ -50,3 +50,7 @@ article>*:not(.entry-content),
 .js-filter-project {
     @apply rounded shadow;
 }
+
+.navigation-menu .active {
+    @apply text-blue-600 font-bold;
+}

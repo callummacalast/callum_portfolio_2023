@@ -34,32 +34,43 @@
 						</svg>
 					</button>
 				</div>
-				<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-					<li><a class="text-sm text-gray-400 hover:text-gray-500" href="<?= get_home_url(); ?>">Home</a></li>
+				<?php
+				echo get_page_uri();
+				?>
+				<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6 navigation-menu">
+					<li><a class="text-sm text-gray-400 hover:text-blue-600" href="<?= get_home_url(); ?>">Home</a></li>
 					<li class="text-gray-300">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 						</svg>
 					</li>
-					<li><a class="text-sm text-blue-600 font-bold" href="<?= get_home_url(); ?>/about">About Me</a></li>
+					<li><a class="text-sm text-gray-400 hover:text-blue-600   <?php if (get_page_uri() == 'about-me') {
+																					echo 'active';
+																				}; ?>" href="<?= get_home_url(); ?>/about">About Me</a></li>
 					<li class="text-gray-300">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 						</svg>
 					</li>
-					<li><a class="text-sm text-gray-400 hover:text-gray-500" href="<?= get_home_url(); ?>/projects">Projects</a></li>
+					<li><a class="text-sm text-gray-400 hover:text-blue-600 <?php if (get_page_uri() == 'projects') {
+																				echo 'active';
+																			}; ?>" href="<?= get_home_url(); ?>/projects">Projects</a></li>
 					<li class="text-gray-300">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 						</svg>
 					</li>
-					<li><a class="text-sm text-gray-400 hover:text-gray-500" href="<?= get_home_url(); ?>/blog">Posts</a></li>
+					<li><a class="text-sm text-gray-400 hover:text-blue-600 <?php if (get_page_uri() == 'blog') {
+																				echo 'active';
+																			}; ?>" href="<?= get_home_url(); ?>/blog">Posts</a></li>
 					<li class="text-gray-300">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 						</svg>
 					</li>
-					<li><a class="text-sm text-gray-400 hover:text-gray-500" href="<?= get_home_url(); ?>/contact">Contact</a></li>
+					<li><a class="text-sm text-gray-400 hover:text-blue-600 <?php if (get_page_uri() == 'contact') {
+																				echo 'active';
+																			}; ?>" href="<?= get_home_url(); ?>/contact">Contact</a></li>
 				</ul>
 				<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="#">Sign In</a>
 				<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="#">Sign up</a>
@@ -72,7 +83,7 @@
 							CM<span class="text-blue-600">.</span>
 						</a>
 						<button class="navbar-close">
-							<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
 							</svg>
 						</button>
