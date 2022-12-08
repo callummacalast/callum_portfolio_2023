@@ -1,18 +1,32 @@
 <?php /* Template Name: Homepage */
 get_header();
 ?>
-<main class="container mx-auto ">
-    <section class="bg-gray-800 text-gray-100 h-3/4">
-        <div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-            <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-                <h1 class="text-5xl font-bold leading-none sm:text-6xl flex flex-col"><span class="text-violet-400 mr-2">Callum</span>Macalast</h1>
-                <p class="mt-6 mb-8 text-lg sm:mb-12">A self-taught full-stack web developer, with a passion for anything tech!</p>
-                <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start"><a rel="noopener noreferrer" class="px-8 py-3 text-lg font-semibold rounded bg-violet-400 border-violet-400 text-gray-900 hover:border-gray-100 hover:bg-none" href="/about">About Me</a><a rel="noopener noreferrer" class="px-8 py-3 text-lg font-semibold border rounded border-gray-100 hover:bg-violet-400 hover:text-gray-900 hover:border-violet-400 transition" href="/projects">My Work</a></div>
-            </div>
-            <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"><img src="https://www.callummacalast.com/img/surfing_cal.jpg" alt="" layout="fill" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 rounded shadow"></div>
-        </div>
-    </section>
-</main>
+<div class="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
+    <div class="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
+        <svg class="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block" viewBox="0 0 100 100" fill="currentColor" preserveAspectRatio="none slice">
+            <path d="M50 0H100L50 100H0L50 0Z"></path>
+        </svg>
+        <img class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full" src="https://www.callummacalast.com/img/surfing_cal.jpg" alt="" />
+    </div>
+    <div class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
+        <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
 
+            <h2 class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                Everything you<br class="hidden md:block" />
+                can imagine
+                <span class="inline-block text-deep-purple-accent-400">is real</span>
+            </h2>
+            <p class="pr-5 mb-5 text-base text-gray-700 md:text-lg">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
+            </p>
+            <div class="flex items-center">
+                <a href="/" class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none">
+                    My Work
+                </a>
+                <a href="/" aria-label="" class="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
 <?php
 get_footer();

@@ -65,7 +65,7 @@ function filter_ajax()
                             <?= the_date(); ?>
                         </span>
                         <h3>
-                            <a href="javascript:void(0)" class="
+                            <a href="<?= the_permalink(); ?>" class="
                         font-semibold
                         text-xl
                         sm:text-2xl
