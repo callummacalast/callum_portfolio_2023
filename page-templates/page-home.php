@@ -17,13 +17,15 @@ get_header();
                 <span class="inline-block text-deep-purple-accent-400 text-3xl">Web Developer</span>
             </h2>
             <p class="pr-5 mb-5 text-base text-gray-700 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
+                I am a self taught web developer from rural pembrokeshire! I am very passionate about anything tech!
             </p>
             <div class="flex items-center">
-                <a href="/" class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none">
+                <a href="<?= get_home_url(); ?>/projects" class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none">
                     My Work
                 </a>
-                <a href="<?= get_home_url(); ?>/about" aria-label="" class="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-purple-700 border">About me</a>
+                <a href="<?= get_home_url(); ?>/about" aria-label="" class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide hover:text-white transition duration-200 rounded shadow-md  hover:bg-blue-700 focus:shadow-outline focus:outline-none">
+                    About me
+                </a>
             </div>
         </div>
     </div>
