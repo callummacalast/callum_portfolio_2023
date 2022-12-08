@@ -2,7 +2,7 @@
 get_header();
 
 ?>
-about me
+
 <section class="bg-gray-800 text-gray-100">
     <div class="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
         <div>
