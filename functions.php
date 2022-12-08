@@ -113,6 +113,18 @@ function tailpress_nav_menu_add_submenu_class($classes, $args, $depth)
 
 add_filter('nav_menu_submenu_css_class', 'tailpress_nav_menu_add_submenu_class', 10, 3);
 
+function load_scripts()
+{
+	wp_enqueue_script('ajax', get_template_directory_uri() . '/resources/js/script.js', array('jquery'), NULL, true);
 
+	wp_localize_script(
+		'ajax',
+		'wp_ajax',
+		array('ajax_url' => admin_url('admin-ajax.php'))
+	);
+}
+
+add_action('wp_enqueue_scripts', 'load_scripts');
 
 require_once(__DIR__ . '/functions/ajax/filter-posts.php');
+require_once(__DIR__ . '/functions/ajax/filter-projects.php');

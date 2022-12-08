@@ -1,27 +1,28 @@
 <?php
 
+add_action('wp_ajax_nopriv_filter_project', 'filter_projects');
+add_action('wp_ajax_filter_project', 'filter_projects');
 
-
-
-
-add_action('wp_ajax_nopriv_filter', 'filter_ajax');
-add_action('wp_ajax_filter', 'filter_ajax');
-
-function filter_ajax()
+function filter_projects()
 {
 
     $category = $_POST['category'];
 
     $args = array(
-        'post_type'   => 'post',
+        'post_type'   => 'projects',
         'post_status' => 'publish',
     );
 
     if (isset($category)) {
-        $args['category__in'] = array($category);
+        $args['tax_query'] = array(
+            array(
+                'taxonomy' => 'project_categories',
+                'field' => 'id',
+                'terms' => $category
+            )
+        );
     }
     $our_posts = new WP_Query($args);
-
 
 
     if ($our_posts->have_posts()) :
@@ -78,5 +79,6 @@ function filter_ajax()
 <?php
         endwhile;
     endif;
+
     die();
 }

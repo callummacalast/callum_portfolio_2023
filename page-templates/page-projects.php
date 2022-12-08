@@ -38,18 +38,15 @@ $our_posts = new WP_Query($args);
             </div>
         </div>
         <div class="grid grid-cols-5 categories gap-5 container mx-auto">
-            <button class="js-filter-item p-3 bg-blue-300 hover:bg-blue-400 text-white">All</button>
+            <button class="js-filter-project p-3 bg-blue-300 hover:bg-blue-400 text-white">All</button>
             <?php
-            $cat_args = array(
-                'exclude' => array(1),
-                'option_all' => 'ALL'
-            );
-
-            $cats = get_categories($cat_args);
+            $project_cats = get_terms(array('taxonomy' => 'project_categories'));
+            // var_dump($project_cats);
 
 
-            foreach ($cats as $cat) : ?>
-                <button class="js-filter-item p-3 bg-blue-300 hover:bg-blue-400 text-white" data-category="<?= $cat->term_id; ?>"><?= $cat->name; ?></button>
+
+            foreach ($project_cats as $cat) : ?>
+                <button class="js-filter-project p-3 bg-blue-300 hover:bg-blue-400 text-white" data-category="<?= $cat->term_id; ?>"><?= $cat->name; ?></button>
 
             <?php endforeach; ?>
 
