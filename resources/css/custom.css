@@ -49,3 +49,8 @@
 .navigation-menu .active {
     @apply text-blue-600 font-bold;
 }
+
+.nf-form-content input,
+textarea {
+    @apply rounded shadow;
+}
