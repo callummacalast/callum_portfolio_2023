@@ -34,48 +34,20 @@ function filter_projects()
 
                 }
             </style>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4  item-blog">
-                <div class="max-w-[370px] mx-auto mb-10">
-                    <div class="rounded overflow-hidden mb-8">
-                        <img src="<?= get_the_post_thumbnail_url(); ?>" alt="image" class="w-full" />
-                    </div>
-                    <div>
-                        <span class="
-                     bg-primary
-                     rounded
-                     inline-block
-                     text-center
-                     py-1
-                     px-4
-                     text-xs
-                     leading-loose
-                     font-semibold
-                     text-white
-                     mb-5
-                     ">
-                            <?= the_date() . ',' . the_time(); ?>
-                        </span>
-                        <h3>
-                            <a href="<?= the_permalink(); ?>" class="
-                        font-semibold
-                        text-xl
-                        sm:text-2xl
-                        lg:text-xl
-                        xl:text-2xl
-                        mb-4
-                        inline-block
-                        text-dark
-                        hover:text-primary
-                        ">
-                                <?= the_title(); ?>
-                            </a>
-                        </h3>
-                        <p class="text-base text-body-color">
-                            <?= the_excerpt(); ?>
-                        </p>
+            <article class="flex flex-col bg-gray-900 item-blog" style="margin: 0!important;">
+                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum" style="margin: 0;">
+                    <img alt="" class="object-cover w-full h-52 bg-gray-500" src="<?= get_the_post_thumbnail_url(); ?>">
+                </a>
+                <div class="flex flex-col flex-1 p-6">
+                    <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                    <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline text-sky-400">Convenire</a>
+                    <h3 class="flex-1 py-2 text-lg font-semibold leading-snug text-white"><?= the_title(); ?></h3>
+                    <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                        <span><?= get_the_date(); ?></span>
+                        <span>2.2K views</span>
                     </div>
                 </div>
-            </div>
+            </article>
 <?php
         endwhile;
     endif;
