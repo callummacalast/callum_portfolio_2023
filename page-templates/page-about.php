@@ -6,7 +6,7 @@ get_header();
 <section class="">
     <div class="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
         <div>
-            <h2 class="text-3xl font-bold tracking-tight text-center sm:text-5xl ">About me<span class="text-blue-600">.</span></h2>
+            <h2 class="text-3xl font-bold tracking-tight text-left sm:text-5xl ">About me<span class="text-blue-600">.</span></h2>
         </div>
         <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center text-black" style="margin-top: 10px;">
             <div>
