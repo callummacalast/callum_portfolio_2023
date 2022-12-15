@@ -15,7 +15,7 @@ $about_image = get_field('about_image');
                 <div class="mt-12 space-y-12">
                     <div class="flex">
                         <div class="flex-shrink-0">
-                            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-violet-400 text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-7 h-7">
+                            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-blue-500 text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-7 h-7 text-white">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg></div>
                         </div>
@@ -26,7 +26,7 @@ $about_image = get_field('about_image');
                     </div>
                     <div class="flex">
                         <div class="flex-shrink-0">
-                            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-violet-400 text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-7 h-7">
+                            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-blue-500 text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-7 h-7 text-white">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg></div>
                         </div>
@@ -37,7 +37,7 @@ $about_image = get_field('about_image');
                     </div>
                     <div class="flex">
                         <div class="flex-shrink-0">
-                            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-violet-400 text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-7 h-7">
+                            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-blue-500 text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-7 h-7 text-white">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg></div>
                         </div>
