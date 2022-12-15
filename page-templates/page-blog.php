@@ -18,7 +18,7 @@ $our_posts = new WP_Query($args);
             <h1 class="text-5xl font-bold">Blog<span class="text-blue-600">.</span></h1>
         </div>
         <div class="grid lg:grid-cols-8 md:grid-cols-4 grid-cols-2 categories gap-5 container mx-auto">
-            <button class="js-filter-item p-3 bg-blue-300 hover:bg-blue-400 text-white">All</button>
+            <button class="js-filter-item inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">All</button>
             <?php
             $cat_args = array(
                 'exclude' => array(1),
@@ -26,7 +26,7 @@ $our_posts = new WP_Query($args);
             );
             $cats = get_categories($cat_args);
             foreach ($cats as $cat) : ?>
-                <button class="js-filter-item inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-category="<?= $cat->term_id; ?>"><?= $cat->name; ?></button>
+                <button class="js-filter-item inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-category="<?= $cat->term_id; ?>"><?= $cat->name; ?></button>
 
 
             <?php endforeach; ?>
@@ -36,7 +36,7 @@ $our_posts = new WP_Query($args);
                 <?php while ($our_posts->have_posts()) : $our_posts->the_post(); ?>
                     <div class="w-full md:w-1/2 lg:w-1/3 px-4 ">
                         <div class="max-w-[370px] mx-auto mb-10">
-                            <div class="rounded overflow-hidden mb-8 shadow">
+                            <div class="rounded overflow-hidden mb-8 shadow" style="height: 250px!important;">
                                 <img src="<?= get_the_post_thumbnail_url(); ?>" alt="image" class="w-full" />
                             </div>
                             <div>
@@ -53,7 +53,7 @@ $our_posts = new WP_Query($args);
                      text-white
                      mb-5
                      ">
-                                    <?= get_the_date(); ?>
+                                    <?= the_category(); ?>
                                 </span>
                                 <h3>
                                     <a href="javascript:void(0)" class="

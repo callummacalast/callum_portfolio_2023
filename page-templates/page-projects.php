@@ -20,7 +20,7 @@ $our_posts = new WP_Query($args);
 
         <div class="grid lg:grid-cols-8 md:grid-cols-4 grid-cols-2 categories gap-5 container mx-auto">
 
-            <button class="js-filter-project p-3 bg-blue-300 hover:bg-blue-400 text-white">All</button>
+            <button class="js-filter-project inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">All</button>
             <?php
             $project_cats = get_terms(array('taxonomy' => 'project_categories'));
             // var_dump($project_cats);
@@ -28,7 +28,7 @@ $our_posts = new WP_Query($args);
 
 
             foreach ($project_cats as $cat) : ?>
-                <button class="js-filter-project p-3 bg-blue-300 hover:bg-blue-400 text-white" data-category="<?= $cat->term_id; ?>"><?= $cat->name; ?></button>
+                <button class="js-filter-project inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-category="<?= $cat->term_id; ?>"><?= $cat->name; ?></button>
 
             <?php endforeach; ?>
 
