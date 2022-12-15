@@ -2,22 +2,14 @@
 /* Template Name: Contact Me */
 get_header();
 ?>
-<section class="min-h-screen flex items-stretch text-white ">
-    <div class="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center" style="background-image: url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);">
-        <div class="absolute bg-black opacity-60 inset-0 z-0"></div>
-        <div class="w-full px-24 z-10">
-            <h1 class="text-5xl font-bold text-left tracking-wide">Get in touch!</h1>
-            <p class="text-3xl my-4">Feel free to drop me a message!</p>
-        </div>
-    </div>
-    <div class="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0" style="background-color: #161616;">
-        <div class="absolute lg:hidden z-10 inset-0 bg-gray-500 bg-no-repeat bg-cover items-center" style="background-image: url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);">
-            <div class="absolute bg-black opacity-60 inset-0 z-0"></div>
-        </div>
-        <div class="w-full py-6 z-20">
-            <?php echo do_shortcode('[ninja_form id=1]'); ?>
-        </div>
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+        <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+        <?php echo do_shortcode('[ninja_form id=1]'); ?>
+
     </div>
 </section>
+
 <?php
 get_footer();
