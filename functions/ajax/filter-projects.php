@@ -34,17 +34,20 @@ function filter_projects()
 
                 }
             </style>
+            <?php
+            $cat = get_the_terms($post->ID, 'project_categories');
+            ?>
             <article class="flex flex-col bg-gray-900 item-blog" style="margin: 0!important;">
                 <a rel="noopener noreferrer" href="<?= get_the_permalink(); ?>" aria-label="Te nulla oportere reprimique his dolorum" style="margin: 0;">
                     <img alt="" class="object-cover w-full h-52 bg-gray-500" src="<?= get_the_post_thumbnail_url(); ?>">
                 </a>
                 <div class="flex flex-col flex-1 p-6">
                     <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
-                    <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline text-sky-400">Convenire</a>
+                    <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline text-sky-400"><?= $cat[0]->name; ?></a>
                     <h3 class="flex-1 py-2 text-lg font-semibold leading-snug text-white"><?= the_title(); ?></h3>
                     <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
                         <span><?= get_the_date(); ?></span>
-                        <span>2.2K views</span>
+                        <!-- <span>2.2K views</span> -->
                     </div>
                 </div>
             </article>
