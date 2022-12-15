@@ -1,6 +1,6 @@
 <?php /* Template Name: About Me */
 get_header();
-
+$about_image = get_field('about_image');
 ?>
 
 <section class="">
@@ -48,7 +48,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div aria-hidden="true" class="mt-10 lg:mt-0"><img src="https://www.callummacalast.com/img/me_cal.jpg" alt="" height="700" class="mx-auto rounded-lg shadow-lg bg-gray-500 object-cover"></div>
+            <div aria-hidden="true" class="mt-10 lg:mt-0"><img src="<?= wp_get_attachment_url($about_image); ?>" alt="" height="700" class="mx-auto rounded-lg shadow-lg bg-gray-500 object-cover"></div>
         </div>
     </div>
 </section>
