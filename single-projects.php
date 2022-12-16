@@ -15,7 +15,7 @@ $last_name = get_the_author_meta('last_name', $author);
 
 ?>
 <div class="mb-4 md:mb-0 w-full mx-auto relative" style="height: 24em;">
-    <div class="absolute left-0 bottom-0 w-full h-full z-10" style="background-image: linear-gradient(219deg,transparent,rgba(0,0,0,.7));"></div>
+    <div class="absolute left-0 bottom-0 w-full h-full z-10 " style="background-image: linear-gradient(219deg,transparent,rgba(0,0,0,.7));"></div>
     <img src="<?= get_the_post_thumbnail_url(); ?>" class="absolute left-0 top-0 w-full h-full z-0 object-cover" />
     <div class="p-4 absolute bottom-0 left-0 z-20">
         <a href="<?= get_home_url(); ?>/project_categories/<?= $category[0]->slug; ?>" class="px-4 py-1 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition inline-flex items-center justify-center mb-2"><?= $category[0]->name ?></a>
@@ -32,7 +32,7 @@ $last_name = get_the_author_meta('last_name', $author);
     </div>
 </div>
 
-<div class="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed">
+<div class="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed project-content">
     <?= the_content(); ?>
 
 </div>

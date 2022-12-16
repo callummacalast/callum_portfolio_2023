@@ -71,3 +71,9 @@ textarea {
 .nf-form-title {
     display: none !important;
 }
+
+
+/* Project Single Item */
+.project-content h2 {
+    @apply text-3xl;
+}
