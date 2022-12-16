@@ -11,7 +11,7 @@ $image = get_field('homepage_image');
     </div>
     <div class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
         <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
-            <h2 class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none" id="type">
+            <h2 class="mb-3 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none" id="type">
             </h2>
             <script>
                 var i = 0;
@@ -27,7 +27,7 @@ $image = get_field('homepage_image');
                 }
                 typeWriter()
             </script>
-            <h3 class="font-bold">Web Developer</h3>
+            <h3 class="font-bold my-3">Web Developer</h3>
 
             <p class="pr-5 mb-5 text-base text-gray-700 md:text-lg">
                 I am a self taught web developer from rural Pembrokeshire! I love anything tech, and surfing!
