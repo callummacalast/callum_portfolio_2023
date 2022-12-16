@@ -63,3 +63,7 @@ textarea {
     @apply shadow !important;
     border: none !important;
 }
+
+.nf-form-title {
+    display: none !important;
+}

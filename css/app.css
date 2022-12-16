@@ -1628,6 +1628,10 @@ textarea {
   border: none !important;
 }
 
+.nf-form-title {
+  display: none !important;
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1913,6 +1917,10 @@ textarea {
 
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .lg\:block {
