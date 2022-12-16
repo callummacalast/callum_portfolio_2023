@@ -36,7 +36,7 @@ function filter_ajax()
             <div class="w-full md:w-1/2 lg:w-1/3 px-4  item-blog">
                 <div class="max-w-[370px] mx-auto mb-10">
                     <div class="rounded overflow-hidden mb-8 shadow" style="height: 250px!important;">
-                        <img src="<?= get_the_post_thumbnail_url(); ?>" alt="image" class="w-full h-auto" />
+                        <img src="<?= get_the_post_thumbnail_url(); ?>" alt="image" class="w-full h-full object-cover" />
                     </div>
                     <div>
                         <span class="
