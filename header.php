@@ -22,9 +22,9 @@
 		<!-- component -->
 
 		<body class="bg-blue-500">
-			<nav class="relative px-4 py-4 flex justify-between items-center bg-white <?php if (!is_front_page()) {
-																							echo 'shadow';
-																						}; ?>">
+			<nav class="relative px-4 py-4 flex justify-between items-center bg-white lg:shadow-none md:shadow-none shadow<?php if (!is_front_page()) {
+																																echo 'shadow';
+																															}; ?>">
 				<a class="text-3xl font-extrabold leading-none" href="<?= get_home_url(); ?>">
 					CM<span class="text-blue-600">.</span>
 				</a>
