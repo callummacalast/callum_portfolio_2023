@@ -41,12 +41,12 @@ $our_posts = new WP_Query($args);
 
 ?>
 <section class="pt-10 pb-10 lg:pb-20">
-    <div class="container m-5">
+    <div class="container mx-auto">
         <div class="heading my-5 text-center">
             <?php if ($posts->taxonomy == 'project_categories') : ?>
-                <h1 class="text-5xl font-bold">Project Category: <?= single_cat_title(); ?><span class="text-blue-600">.</span></h1>
+                <h1 class="lg:text-5xl text-3xl font-bold">Project Category: <?= single_cat_title(); ?><span class="text-blue-600">.</span></h1>
             <?php else : ?>
-                <h1 class="text-5xl font-bold">Category: <?= single_cat_title(); ?><span class="text-blue-600">.</span></h1>
+                <h1 class="lg:text-5xl text-3xl font-bold">Category: <?= single_cat_title(); ?><span class="text-blue-600">.</span></h1>
             <?php endif; ?>
         </div>
 
