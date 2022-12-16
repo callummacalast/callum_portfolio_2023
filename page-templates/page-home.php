@@ -43,7 +43,7 @@ $image = get_field('homepage_image');
         </div>
     </div>
 </div>
-<section class="bg-gray-800 text-gray-100 py-10 mt-32">
+<section class="bg-gray-800 text-gray-100 py-10">
     <div class="container p-6 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
         <h2 class="text-3xl font-bold">Preferred Technology</h2>
         <div class="flex flex-wrap justify-center lg:justify-between">
