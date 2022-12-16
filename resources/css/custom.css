@@ -75,5 +75,5 @@ textarea {
 
 /* Project Single Item */
 .project-content h2 {
-    @apply text-3xl;
+    @apply text-3xl my-3;
 }
