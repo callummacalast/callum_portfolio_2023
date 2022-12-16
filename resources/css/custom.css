@@ -64,6 +64,10 @@ textarea {
     border: none !important;
 }
 
+.ninja-forms-form-wrap input[type="button"] {
+    @apply bg-blue-500 !important;
+}
+
 .nf-form-title {
     display: none !important;
 }

@@ -1628,6 +1628,11 @@ textarea {
   border: none !important;
 }
 
+.ninja-forms-form-wrap input[type="button"] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity)) !important;
+}
+
 .nf-form-title {
   display: none !important;
 }
@@ -1740,11 +1745,6 @@ textarea {
   .dark\:bg-gray-900 {
     --tw-bg-opacity: 1;
     background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-  }
-
-  .dark\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
   .dark\:text-gray-400 {
@@ -1911,16 +1911,12 @@ textarea {
     margin-top: 0px;
   }
 
-  .lg\:mb-16 {
-    margin-bottom: 4rem;
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .lg\:mb-0 {
     margin-bottom: 0px;
-  }
-
-  .lg\:mb-8 {
-    margin-bottom: 2rem;
   }
 
   .lg\:block {
