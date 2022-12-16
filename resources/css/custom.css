@@ -58,3 +58,8 @@ textarea {
 .post-categories a:hover {
     @apply bg-transparent !important;
 }
+
+.ninja-forms-form-wrap .ninja-forms-field {
+    @apply shadow !important;
+    border: none !important;
+}
