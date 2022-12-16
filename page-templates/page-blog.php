@@ -26,7 +26,7 @@ $our_posts = new WP_Query($args);
             );
             $cats = get_categories($cat_args);
             foreach ($cats as $cat) : ?>
-                <button class="js-filter-item inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-category="<?= $cat->term_id; ?>"><?= $cat->name; ?></button>
+                <button class="js-filter-item inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out focus:text-red-400" data-category="<?= $cat->term_id; ?>"><?= $cat->name; ?></button>
 
 
             <?php endforeach; ?>
