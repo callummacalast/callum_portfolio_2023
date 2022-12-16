@@ -39,21 +39,25 @@ function filter_ajax()
                         <img src="<?= get_the_post_thumbnail_url(); ?>" alt="image" class="w-full h-full object-cover" />
                     </div>
                     <div>
-                        <span class="
-                     bg-primary
-                     rounded
-                     inline-block
-                     text-center
-                     py-1
-                     px-4
-                     text-xs
-                     leading-loose
-                     font-semibold
-                     text-white
-                     mb-5
-                     ">
-                            <?= the_category(); ?>
-                        </span>
+                        <div class="flex justify-between items-center my-5">
+
+                            <span class="
+                            bg-primary
+                            rounded
+                            inline-block
+                            text-center
+                            py-1
+                            px-4
+                            text-xs
+                            leading-loose
+                            font-semibold
+                            text-white
+
+                            ">
+                                <?= the_category(); ?>
+                            </span>
+                            <span class="text-xs font-bold"><?= get_the_date(__('d M')); ?></span>
+                        </div>
 
                         <h3>
                             <a href="<?= the_permalink(); ?>" class="

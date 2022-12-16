@@ -1,43 +1,62 @@
-<?php /* Template Name: Blog */
-get_header();
+<?php
 
-$args = array(
-    'post_type'   => 'post',
-    'post_status' => 'publish',
-);
-$our_posts = new WP_Query($args);
+/**
+ * A Simple Category Template
+ */
+
+get_header();
+$posts = get_queried_object();
+
+
+$category_id = $posts->term_id;
+$category_slug = $posts->slug;
+
+
 ?>
 
+<?php
 
-<!-- component -->
-<link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
-<!-- ====== Blog Section Start -->
+if ($posts->taxonomy == 'project_categories') {
+    $args = array(
+        'post_type' => 'projects',
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'project_categories',
+                'field' => 'slug',
+                'terms' => $category_slug
+            )
+        )
+    );
+} elseif ($posts->taxonomy == 'category') {
+    $args = array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'category_name' => $category_slug,
+        'posts_per_page' => -1,
+    );
+}
+$our_posts = new WP_Query($args);
+
+?>
 <section class="pt-10 pb-10 lg:pb-20">
-    <div class="container">
+    <div class="container m-5">
         <div class="heading my-5 text-center">
-            <h1 class="text-5xl font-bold">Blog<span class="text-blue-600">.</span></h1>
+            <?php if ($posts->taxonomy == 'project_categories') : ?>
+                <h1 class="text-5xl font-bold">Project Category: <?= single_cat_title(); ?><span class="text-blue-600">.</span></h1>
+            <?php else : ?>
+                <h1 class="text-5xl font-bold">Category: <?= single_cat_title(); ?><span class="text-blue-600">.</span></h1>
+            <?php endif; ?>
         </div>
-        <div class="grid lg:grid-cols-8 md:grid-cols-4 grid-cols-2 categories gap-5 container mx-auto">
-            <button class="js-filter-item inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">All</button>
-            <?php
-            $cat_args = array(
-                'exclude' => array(1),
-                'option_all' => 'ALL'
-            );
-            $cats = get_categories($cat_args);
-            foreach ($cats as $cat) : ?>
-                <button class="js-filter-item inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-category="<?= $cat->term_id; ?>"><?= $cat->name; ?></button>
 
-
-            <?php endforeach; ?>
-        </div>
         <div class="flex flex-wrap -mx-4 blogs transition mt-16">
             <?php if ($our_posts->have_posts()) : ?>
                 <?php while ($our_posts->have_posts()) : $our_posts->the_post(); ?>
                     <div class="w-full md:w-1/2 lg:w-1/3 px-4 ">
                         <div class="max-w-[370px] mx-auto mb-10">
-                            <div class="rounded overflow-hidden mb-8 shadow" style="height: 250px!important;">
-                                <img src="<?= get_the_post_thumbnail_url(); ?>" alt="image" class="w-full h-full object-cover" />
+                            <div class="rounded overflow-hidden mb-8 shadow " style="height: 250px!important;">
+                                <img src="<?= get_the_post_thumbnail_url(); ?>" alt="image" class="w-full h-full object-cover hover:scale-105 transition ease-in-out delay-50" />
                             </div>
                             <div class="my-3">
                                 <div class="flex justify-between items-center my-5">
@@ -61,13 +80,20 @@ $our_posts = new WP_Query($args);
                      hover:text-black
 
                      ">
+                                        <?php if ($posts->taxonomy == 'project_categories') : ?>
+                                            <?php
+                                            $cat = get_the_terms($post->ID, 'project_categories');
+                                            ?>
+                                            <?= $cat[0]->name; ?>
+                                        <?php else : ?>
+                                        <?php endif; ?>
                                         <?= the_category(); ?>
                                     </span>
                                     <span class="text-xs font-bold"><?= get_the_date(__('d M')); ?></span>
                                 </div>
 
                                 <h3>
-                                    <a href="javascript:void(0)" class="
+                                    <a href="<?= the_permalink(); ?>" class="
                         font-semibold
                         text-xl
                         sm:text-2xl
@@ -94,7 +120,7 @@ $our_posts = new WP_Query($args);
         </div>
     </div>
 </section>
-<!-- ====== Blog Section End -->
 
 <?php
+
 get_footer();

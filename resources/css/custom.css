@@ -54,3 +54,7 @@
 textarea {
     @apply rounded shadow;
 }
+
+.post-categories a:hover {
+    @apply bg-transparent !important;
+}
