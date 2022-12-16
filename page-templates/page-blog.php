@@ -67,7 +67,7 @@ $our_posts = new WP_Query($args);
                                 </div>
 
                                 <h3>
-                                    <a href="javascript:void(0)" class="
+                                    <a href="<?= the_permalink(); ?>" class="
                         font-semibold
                         text-xl
                         sm:text-2xl
