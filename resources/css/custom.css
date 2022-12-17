@@ -82,3 +82,12 @@ textarea {
     fill: #fff !important;
     /* @apply fill-white !important; */
 }
+
+
+.post-article h2 {
+    @apply text-3xl my-3;
+}
+
+.post-article p {
+    @apply py-2;
+}
