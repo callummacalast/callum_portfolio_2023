@@ -12,8 +12,8 @@ $our_posts = new WP_Query($args);
 <!-- ====== Blog Section Start -->
 
 
-<section class="py-6 sm:py-12  text-black">
-    <div class="container p-6 mx-auto space-y-8">
+<section class=" text-black">
+    <div class="container p-3 mx-auto space-y-8">
         <div class="heading my-5 text-center">
             <h1 class="text-5xl font-bold">My Projects<span class="text-blue-600">.</span></h1>
         </div>
