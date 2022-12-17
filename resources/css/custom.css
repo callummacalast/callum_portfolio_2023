@@ -77,3 +77,8 @@ textarea {
 .project-content h2 {
     @apply text-3xl my-3;
 }
+
+.tech-stack svg:hover {
+    fill: #fff !important;
+    /* @apply fill-white !important; */
+}

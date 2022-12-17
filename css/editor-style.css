@@ -284,8 +284,8 @@
   height: 2.5rem
 }
 
-.h-40 {
-  height: 10rem
+.h-96 {
+  height: 24rem
 }
 
 .h-12 {
@@ -302,18 +302,6 @@
 
 .h-52 {
   height: 13rem
-}
-
-.h-32 {
-  height: 8rem
-}
-
-.h-16 {
-  height: 4rem
-}
-
-.h-96 {
-  height: 24rem
 }
 
 .min-h-screen {
@@ -649,13 +637,12 @@
   background-color: transparent
 }
 
-.bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity))
-}
-
 .fill-current {
   fill: currentColor
+}
+
+.fill-white {
+  fill: #fff
 }
 
 .object-cover {
@@ -673,10 +660,6 @@
 
 .p-6 {
   padding: 1.5rem
-}
-
-.p-2 {
-  padding: 0.5rem
 }
 
 .px-4 {
@@ -986,14 +969,6 @@
   opacity: 0.25
 }
 
-.bg-blend-multiply {
-  background-blend-mode: multiply
-}
-
-.bg-blend-screen {
-  background-blend-mode: screen
-}
-
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -1157,6 +1132,10 @@ body {
   background-color: rgb(29 78 216 / var(--tw-bg-opacity))
 }
 
+.hover\:fill-white:hover {
+  fill: #fff
+}
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity))
@@ -1246,10 +1225,6 @@ body {
     height: 2.5rem
   }
 
-  .sm\:h-96 {
-    height: 24rem
-  }
-
   .sm\:w-10 {
     width: 2.5rem
   }
@@ -1332,12 +1307,12 @@ body {
     display: flex
   }
 
-  .md\:h-96 {
-    height: 24rem
-  }
-
   .md\:h-52 {
     height: 13rem
+  }
+
+  .md\:h-96 {
+    height: 24rem
   }
 
   .md\:w-1\/2 {
@@ -1446,16 +1421,12 @@ body {
     display: none
   }
 
-  .lg\:h-full {
-    height: 100%
-  }
-
-  .lg\:h-52 {
-    height: 13rem
-  }
-
   .lg\:h-60 {
     height: 15rem
+  }
+
+  .lg\:h-full {
+    height: 100%
   }
 
   .lg\:w-1\/3 {

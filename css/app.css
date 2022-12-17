@@ -1153,6 +1153,10 @@ video {
   fill: currentColor;
 }
 
+.fill-white {
+  fill: #fff;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1674,6 +1678,11 @@ textarea {
   line-height: 2.25rem;
 }
 
+.tech-stack svg:hover {
+  fill: #fff !important;
+  /* @apply fill-white !important; */
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1713,6 +1722,10 @@ textarea {
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.hover\:fill-white:hover {
+  fill: #fff;
 }
 
 .hover\:text-black:hover {
