@@ -1704,6 +1704,7 @@ textarea {
 
 .post-title {
   color: white !important;
+  text-decoration: none !important;
 }
 
 .hover\:scale-105:hover {
