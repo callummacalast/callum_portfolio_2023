@@ -1546,6 +1546,11 @@ body {
     padding-bottom: 4rem
   }
 
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem
+  }
+
   .lg\:pb-20 {
     padding-bottom: 5rem
   }
