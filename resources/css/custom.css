@@ -95,3 +95,7 @@ textarea {
 .post-article a {
     @apply text-blue-500 underline font-bold;
 }
+
+.post-title {
+    color: white !important;
+}

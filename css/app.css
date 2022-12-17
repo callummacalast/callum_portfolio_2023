@@ -1702,6 +1702,10 @@ textarea {
   text-decoration-line: underline;
 }
 
+.post-title {
+  color: white !important;
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
