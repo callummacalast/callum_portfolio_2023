@@ -91,3 +91,7 @@ textarea {
 .post-article p {
     @apply py-2;
 }
+
+.post-article a {
+    @apply text-blue-500 underline font-bold;
+}
