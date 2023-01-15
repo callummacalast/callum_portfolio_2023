@@ -123,7 +123,7 @@
 								<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="<?= get_home_url(); ?>/blog">Posts</a>
 							</li>
 							<li class="mb-1">
-								<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact</a>
+								<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="<?= get_home_url();?>/contact">Contact</a>
 							</li>
 						</ul>
 					</div>
